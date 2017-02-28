@@ -13,7 +13,7 @@ import { HeroService }         	from './hero.service';
 @NgModule({
   imports:      
 	[ 
-		BrowserModule ,
+		BrowserModule,
 		FormsModule,
 		RouterModule.forRoot([
 		   {
@@ -28,6 +28,10 @@ import { HeroService }         	from './hero.service';
 		  {
 			path: 'heroes',
 			component: HeroesComponent
+		  },
+		  {
+			path : 'detail/:id',		
+			component : HeroDetailComponent
 		  }
 		])
 	],
